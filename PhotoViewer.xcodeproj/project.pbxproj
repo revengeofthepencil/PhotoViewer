@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2F990C8D1B2FD268000A9AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990C8C1B2FD268000A9AC5 /* AppDelegate.swift */; };
-		2F990C8F1B2FD268000A9AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990C8E1B2FD268000A9AC5 /* ViewController.swift */; };
 		2F990C921B2FD268000A9AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F990C901B2FD268000A9AC5 /* Main.storyboard */; };
 		2F990C941B2FD268000A9AC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F990C931B2FD268000A9AC5 /* Images.xcassets */; };
 		2F990C971B2FD268000A9AC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F990C951B2FD268000A9AC5 /* LaunchScreen.xib */; };
 		2F990CA31B2FD268000A9AC5 /* PhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990CA21B2FD268000A9AC5 /* PhotoViewerTests.swift */; };
+		2F990CAD1B2FD652000A9AC5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990CAC1B2FD652000A9AC5 /* Photo.swift */; };
+		2F990CAF1B2FD78E000A9AC5 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990CAE1B2FD78E000A9AC5 /* PhotosTableViewController.swift */; };
+		2F990CB11B2FD7D0000A9AC5 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990CB01B2FD7D0000A9AC5 /* DisplayViewController.swift */; };
+		2F990CB31B2FD7EC000A9AC5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F990CB21B2FD7EC000A9AC5 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		2F990C871B2FD268000A9AC5 /* PhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F990C8B1B2FD268000A9AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F990C8C1B2FD268000A9AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F990C8E1B2FD268000A9AC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F990C911B2FD268000A9AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F990C931B2FD268000A9AC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F990C961B2FD268000A9AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2F990C9C1B2FD268000A9AC5 /* PhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F990CA11B2FD268000A9AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F990CA21B2FD268000A9AC5 /* PhotoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerTests.swift; sourceTree = "<group>"; };
+		2F990CAC1B2FD652000A9AC5 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		2F990CAE1B2FD78E000A9AC5 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		2F990CB01B2FD7D0000A9AC5 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		2F990CB21B2FD7EC000A9AC5 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		2F990C7E1B2FD268000A9AC5 = {
 			isa = PBXGroup;
 			children = (
+				2F990CAC1B2FD652000A9AC5 /* Photo.swift */,
 				2F990C891B2FD268000A9AC5 /* PhotoViewer */,
 				2F990C9F1B2FD268000A9AC5 /* PhotoViewerTests */,
 				2F990C881B2FD268000A9AC5 /* Products */,
@@ -78,11 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				2F990C8C1B2FD268000A9AC5 /* AppDelegate.swift */,
-				2F990C8E1B2FD268000A9AC5 /* ViewController.swift */,
 				2F990C901B2FD268000A9AC5 /* Main.storyboard */,
 				2F990C931B2FD268000A9AC5 /* Images.xcassets */,
 				2F990C951B2FD268000A9AC5 /* LaunchScreen.xib */,
 				2F990C8A1B2FD268000A9AC5 /* Supporting Files */,
+				2F990CAE1B2FD78E000A9AC5 /* PhotosTableViewController.swift */,
+				2F990CB01B2FD7D0000A9AC5 /* DisplayViewController.swift */,
+				2F990CB21B2FD7EC000A9AC5 /* InfoViewController.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F990C8F1B2FD268000A9AC5 /* ViewController.swift in Sources */,
+				2F990CAD1B2FD652000A9AC5 /* Photo.swift in Sources */,
 				2F990C8D1B2FD268000A9AC5 /* AppDelegate.swift in Sources */,
+				2F990CAF1B2FD78E000A9AC5 /* PhotosTableViewController.swift in Sources */,
+				2F990CB11B2FD7D0000A9AC5 /* DisplayViewController.swift in Sources */,
+				2F990CB31B2FD7EC000A9AC5 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
