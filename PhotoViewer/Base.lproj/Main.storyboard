@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Photos-->
+        <!--Drawings-->
         <scene sceneID="jde-SB-esW">
             <objects>
                 <tableViewController id="EeY-Ge-XVd" customClass="PhotosTableViewController" customModule="PhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="EeY-Ge-XVd" id="IgW-jp-xpI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Photos" id="TcN-rQ-k5f"/>
+                    <navigationItem key="navigationItem" title="Drawings" id="TcN-rQ-k5f"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er0-pW-5Yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
