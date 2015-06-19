@@ -15,6 +15,9 @@ class DisplayViewController: UIViewController {
     @IBOutlet weak var currentImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var image = UIImage(named: currentPhoto!.fileName)
+        currentImage.image = image
 
         // Do any additional setup after loading the view.
     }

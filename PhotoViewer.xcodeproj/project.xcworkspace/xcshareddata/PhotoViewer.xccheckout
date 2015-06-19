@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1D7C926A-F305-4BBA-90D6-2AC6D8CE8168</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotoViewer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3127BE4A9574CACD60854708DE5650A1675FD48</key>
+		<string>https://github.com/revengeofthepencil/PhotoViewer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotoViewer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3127BE4A9574CACD60854708DE5650A1675FD48</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/revengeofthepencil/PhotoViewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3127BE4A9574CACD60854708DE5650A1675FD48</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3127BE4A9574CACD60854708DE5650A1675FD48</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotoViewer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

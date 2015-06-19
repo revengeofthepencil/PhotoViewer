@@ -102,14 +102,15 @@ class PhotosTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        var secondScene = segue.destinationViewController as! DisplayViewController
+        if let indexPath = self.tableView.indexPathForSelectedRow() {
+            let selectedPhoto = photos[indexPath.row]
+            secondScene.currentPhoto = selectedPhoto
+        }
+        
     }
-    */
 
 }
