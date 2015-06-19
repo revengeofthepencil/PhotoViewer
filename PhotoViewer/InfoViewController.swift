@@ -9,12 +9,16 @@
 import UIKit
 
 class InfoViewController: UIViewController {
+    var currentPhoto : Photo?
 
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBOutlet weak var detailsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        detailsLabel.text = currentPhoto!.notes
     }
 
     override func didReceiveMemoryWarning() {
