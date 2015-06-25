@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6kf-6h-e44">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Drawings-->
@@ -91,14 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-As-CZr">
-                                <rect key="frame" x="34" y="354" width="214" height="173"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-aA-vTd">
-                                <rect key="frame" x="34" y="550" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-aA-vTd">
+                                <rect key="frame" x="34" y="497" width="75" height="30"/>
                                 <state key="normal" title="Okie Dokie">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,8 +102,24 @@
                                     <action selector="dismiss:" destination="qXQ-03-BfG" eventType="touchUpInside" id="1MA-qd-Fcw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-As-CZr">
+                                <rect key="frame" x="34" y="258" width="214" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Dwj-Hk-2uT"/>
+                                    <constraint firstAttribute="width" constant="214" id="qmB-b2-cpO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SO8-As-CZr" firstAttribute="leading" secondItem="Z5o-aA-vTd" secondAttribute="leading" id="0b0-fj-qBk"/>
+                            <constraint firstItem="rPn-WP-2rH" firstAttribute="top" secondItem="Z5o-aA-vTd" secondAttribute="bottom" constant="73" id="OQh-VO-3pj"/>
+                            <constraint firstItem="Z5o-aA-vTd" firstAttribute="top" secondItem="SO8-As-CZr" secondAttribute="bottom" constant="66" id="ZVg-jd-u9l"/>
+                            <constraint firstItem="Z5o-aA-vTd" firstAttribute="leading" secondItem="P0G-Z6-rUh" secondAttribute="leadingMargin" constant="18" id="xx6-vw-QmT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="detailsLabel" destination="SO8-As-CZr" id="V9Z-Ov-rh9"/>
